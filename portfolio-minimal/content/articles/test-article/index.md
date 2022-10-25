@@ -18,7 +18,7 @@ keywords:
 
 ## Code block test
 
-```C#
+```Csharp
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
