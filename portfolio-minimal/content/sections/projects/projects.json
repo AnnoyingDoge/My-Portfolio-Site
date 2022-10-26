@@ -42,7 +42,7 @@
         },
         {
           "type": "external",
-          "url": "/robotics"
+          "url": "/ftc"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "links": [
         {
           "type": "external",
-          "url": "/VEX"
+          "url": "/vex"
         }
       ]
     }

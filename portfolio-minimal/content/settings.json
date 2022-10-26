@@ -21,9 +21,9 @@
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
-        { "label": "Projects", "url": "/blog" },
-        { "label": "Features", "url": "/#features" },
-        { "label": "Github", "url": "/#github" }
+        { "label": "Projects", "url": "/#projects" },
+        { "label": "Github", "url": "https://github.com/AnnoyingDoge" },
+        { "label": "Thingiverse", "url": "https://www.thingiverse.com/ferb601/designs" }
       ],
       "ctaButton": {
         "openNewTab": true,
