@@ -1,22 +1,22 @@
 {
-  "intro": "Hej",
+  "intro": "Hi!",
   "heroPhoto": {
-    "src": "../../images/nail-joystick.png",
+    "src": "../../images/joystick.png",
     "alt": "My Photo"
   },
   "image": {
-    "src": "../../images/waving-hand.png",
+    "src": "",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm a Gatsby Starter",
+  "title": "I'm Sam,",
   "subtitle": {
-    "prefix": "I do all the setup ",
-    "highlight": "for you",
+    "prefix": "A high school student who loves ",
+    "highlight": "making",
     "suffix": "."
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "description": "Read onwards to see what I've been working on!",
   "socialProfiles": {
-    "from": ["LinkedIn", "Github", "Mail"],
+    "from": ["Github", "Mail"],
     "showIcons": true
   }
 }

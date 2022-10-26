@@ -9,5 +9,6 @@ export default function ImprintPage() {
         <LegalSection sectionId="imprint" heading="Imprint" />
       </Page>
     </>
+    
   );
 }

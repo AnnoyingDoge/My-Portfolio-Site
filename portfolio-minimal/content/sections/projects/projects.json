@@ -27,8 +27,29 @@
     },
     {
       "visible": true,
-      "category": "🧰 EXTENDABLE LAYOUT",
-      "title": "Add more sections!",
+      "category": "ROBOTICS",
+      "title": "FIRST Robotics",
+      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
+      "tags": ["Custom Sections", "Easy-2-Use"],
+      "image": {
+        "src": "../../custom-imgs/robotics/robot-top.jpg",
+        "alt": "Extendable Layout"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/FTC-PARC-Acadia/Power-Play"
+        },
+        {
+          "type": "external",
+          "url": "/robotics"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "ROBOTICS",
+      "title": "VEX Robotics",
       "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
       "tags": ["Custom Sections", "Easy-2-Use"],
       "image": {
@@ -37,8 +58,8 @@
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "type": "external",
+          "url": "/VEX"
         }
       ]
     }
@@ -48,4 +69,5 @@
     "label": "View all projects",
     "url": "/blog"
   }
+  
 }
