@@ -26,10 +26,10 @@
       "visible": true,
       "category": "Game Development",
       "title": "Project Fetch",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "description": "Project Fetch is an game undergoing development by a three person team. The story follows a delivery dog on his journey across the animal world. Read more below!",
+      "tags": ["Game Development", "Unity", "C#"],
       "image": {
-        "src": "../../custom-imgs/fetch/fetch-main.png",
+        "src": "../../custom-imgs/fetch/fetch-main.jpg",
         "alt": "Image of a mail-man dog standing in a forest"
       },
       "links": [
