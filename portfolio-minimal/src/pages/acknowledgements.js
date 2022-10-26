@@ -13,6 +13,7 @@ export default function AcknowledgementsPage() {
     );
 }
 
+//This works, but making use of a legal page makes sense here anyways
 // export default function AcknowledgementsPage() {
 //     return (
 //         <Page>
