@@ -32,7 +32,8 @@
       },
       "footer": [
         { "label": "Privacy", "url": "/privacy" },
-        { "label": "Imprint", "url": "/imprint" }
+        { "label": "Imprint", "url": "/imprint" },
+        { "label": "Acknowledgements", "url": "/acknowledgements"}
       ]
     },
     "featureToggles": {
