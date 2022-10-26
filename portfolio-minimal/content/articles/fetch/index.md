@@ -1,5 +1,5 @@
 ---
-title: "Fetch: 2D Platformer"
+title: "Fetch: A 2D Platformer"
 description: "This description will be used for the article listing and search results on Google."
 date: "2022-10-25"
 banner:
