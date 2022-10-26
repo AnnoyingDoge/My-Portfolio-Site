@@ -1,3 +1,4 @@
-# My-Website-1
+# My Portfolio Site!
 
-Based on: https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme
+This is a site built in Gatsby, using a template by Konstantin Münster. You can find the repository at the link below!
+https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme
