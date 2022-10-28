@@ -33,7 +33,7 @@
       "tags": ["Custom Sections", "Easy-2-Use"],
       "image": {
         "src": "../../custom-imgs/robotics/robot-top.jpg",
-        "alt": "Extendable Layout"
+        "alt": "Prototype FTC Robot"
       },
       "links": [
         {
@@ -43,6 +43,23 @@
         {
           "type": "external",
           "url": "/ftc"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "Electronics",
+      "title": "3.5mm Jack Noise Remover",
+      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
+      "tags": ["CAD", "Fusion 360", "3D Printing"],
+      "image": {
+        "src": "../../custom-imgs/noise-removal/jack-1.jpg",
+        "alt": "Earbuds, audio jack with noise removal device"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "/noise-removal"
         }
       ]
     },
@@ -60,6 +77,23 @@
         {
           "type": "external",
           "url": "/vex"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "Other",
+      "title": "...and more!",
+      "description": "Check out all my other projects at the link below!",
+      "tags": ["Lots of other stuff!"],
+      "image": {
+        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "alt": "Extendable Layout"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "/blog"
         }
       ]
     }

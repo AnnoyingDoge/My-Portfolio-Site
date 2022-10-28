@@ -1,7 +1,7 @@
 {
   "name": "Sam Keamy",
   "email": "swk7010@gmail.com",
-  "description": "This site was built using Gatsby with a template by Konstantin Münster. Please check out their Github! Links ",
+  "description": "This site was built using Gatsby with a template by Konstantin Münster. Please check out their Github! Links can be found in the acknowledgements footer page.",
   "image": {
     "src": "../../images/favicon.png",
     "alt": "Gatsby Logo"
