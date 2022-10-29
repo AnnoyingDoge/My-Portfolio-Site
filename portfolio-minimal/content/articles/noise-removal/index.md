@@ -18,7 +18,7 @@ keywords:
 
 ## Introduction
 
-This project started after a conversation I had with my friend Trevor. We both had been experiencing some static/noise on our low impedance IEMs, so I threw together a breadboard circuit and tried artificially increasing impedance using 22 ohm resistors. After hearing the static disappear, I decided to make a cheap, portable version of this device for him and I.
+This project started after a conversation I had with my friend Trevor in the spring of 11th grade. We both had been experiencing some static/noise on our low impedance IEMs, so I threw together a breadboard circuit and tried artificially increasing impedance using 22 ohm resistors. After hearing the static disappear, I decided to make a cheap, portable version of this device for him and I.
 
 Initially, the idea for the device was a cable with built in resistors, but after some prototyping, I was concerned that the final product may be more fragile this way. So, I pivoted, designing a case in CAD to protect the internals.
 

@@ -20,7 +20,7 @@ keywords:
 
 ![Case designed in Fusion 360, pictured without sides.](../../custom-imgs/handheld/Handheld-CAD.png "Case designed in Fusion 360, without sides.")
 
-Type here
+This is a CAD drawing of a Raspberry Pi handheld I designed in Fusion 360. This project was completed in ninth grade, and it was one of my first large projects in Fusion 360. As such, there were a lot of mistakes in designing it, as well as many things I learned. Of note, the tolerances were poor and I did not print out enough prototypes. At the time, I was worried about wasting plastic, however I could have simply printed out small sections of the case and test fit the electronics. As a result, the Arduino and power switch did not fit well, and had to be glued in place. Further, I hadn’t yet learned enough about assembling parts in CAD nor did I consider using snap-fit joints, which would have made the whole process much smoother. However, I learned to work with 2D schematics and 3D libraries as references for design, general design rules for 3D printing, and to bring together a variety of electronics to make a functional device.
 
 ## Electronics
 

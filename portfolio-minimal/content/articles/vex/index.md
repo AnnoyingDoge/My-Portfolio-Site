@@ -3,7 +3,7 @@ title: "VEX Robotics"
 description: "This description will be used for the article listing and search results on Google."
 date: "2022-10-25"
 banner:
-  src: "../../custom-imgs/robotics/robot-main.jpg"
+  src: ""
   alt: "PARC Prototype Robot (V0.5)"
   caption: 'PARC''s Prototype Robot (V0.5)'
 categories:
