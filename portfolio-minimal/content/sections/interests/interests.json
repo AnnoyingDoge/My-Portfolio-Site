@@ -24,14 +24,14 @@
     {
       "label": "Java",
       "image": {
-        "src": "../../images/nail-polish.png",
+        "src": "../../custom-imgs/icons/java.png",
         "alt": ""
       }
     },
     {
       "label": "Rapid Prototyping",
       "image": {
-        "src": "../../images/medium.png",
+        "src": "../../images/high-voltage.png",
         "alt": ""
       }
     },
@@ -41,25 +41,11 @@
         "src": "../../images/gem-stone.png",
         "alt": ""
       }
-    },
-    {
-      "label": "",
-      "image": {
-        "src": "../../images/gatsby.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "",
-      "image": {
-        "src": "../../images/high-voltage.png",
-        "alt": ""
-      }
     }
   ],
   "button": {
     "visible": true,
     "label": "+ Load More",
-    "initiallyShownInterests": 5
+    "initiallyShownInterests": 2
   }
 }

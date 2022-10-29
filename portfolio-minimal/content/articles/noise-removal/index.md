@@ -18,56 +18,32 @@ keywords:
 
 ## Introduction
 
-Type here
+This project started after a conversation I had with my friend Trevor. We both had been experiencing some static/noise on our low impedance IEMs, so I threw together a breadboard circuit and tried artificially increasing impedance using 22 ohm resistors. After hearing the static disappear, I decided to make a cheap, portable version of this device for him and I.
 
-## Code block test
+Initially, the idea for the device was a cable with built in resistors, but after some prototyping, I was concerned that the final product may be more fragile this way. So, I pivoted, designing a case in CAD to protect the internals.
 
-```java
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class doNotDestroy : MonoBehaviour
-{
-    //There are a number of objects in the game which should, in almost any case, not be destroyed.
-    //This script is simply attached to those game objects.
+## Prototyping
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+When testing my first complete prototype, I noticed that the effect 22 ohm resistors had was much less than the breadboarded version with the same resistors, likely due to the resistance the breadboard itself had introduced. Thus, I re-tested multiple higher ohm values, landing on 100 ohm resistors.
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
-```
+In the final product, there are three 100 ohm resistors, one for each pin. The 3.5mm audio jack parts were sourced from Sparkfun, simply using an audio plug and jack (<u>[COM-11143](https://www.sparkfun.com/products/11143)</u> and <u>[PRT-12639](https://www.sparkfun.com/products/12639)</u>). In total, the device only cost a few dollars to make, but helped fix a common problem both Trevor and I had experienced.
 
-Inline code: `print()`
+## Design and Printing
 
-Lorem ipsum dolor sit amed Vel ut spiritday all cultural Lili Elbe lorem in sexuality Herstory sit lorem Ac Genderless homoflexible trans Carrie Fisher Transgender love family cross-dresser ac a ut Ac xe she ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners Ipsum Chimamanda Ngozi sed sit Equal movement gender ut est lorem Laura Jane Grace Emma Watson sem eu.
 
-**Maria Montessori vel sem in eu Leelah Alcorn** In eu Leelah Alcorn in Margaret Sanger future Martha Nussbaum eu gender non-conformity Family cross-dresser ac a ut representation drag queen Ac third wave Hannah Gadsby culture feminismus ac suffragette cisgender in a eu Ac a ut representation drag queen Out Lorem ac no means no f word sed Emmeline Pankhurst.
+![This is the alt tag.](../../custom-imgs/noise-removal/Case-CAD.png "The 3D printed snap fit case requires no mounting hardware!")
 
-## Second Headline
+When designing this device, there were a few general goals:
 
-Est vel est appreciation Nadia Murad Basee Taha cross-dressing vel Ut mi sit ut eu id Samira Wiley sit vel sem Ut romance in gender studies ballroom Sit lorem ac no means no f word sed Emmeline Pankhurst Ac sorellanza In Lea Delaria in grrlpwr pansexual intersectional yas queen diritti id mi Sem Audre Lorde Sappho in sed et empowerment genderqueer intersex.
+  1. Usability and feel
 
-![This is the alt tag.](../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg "This is a markdown [caption](https://konstantin.digital).")
+  2. Ease of repair and modification
 
-Feminizmas eu Dian Fossey ac third wave notion supporting androgyny dui ut People a Sylvia Plath mi sex-positivity demisexual a equality suffragettes pronouns Vel est appreciation Nadia Murad Basee Taha cross-dressing vel Sustainability ut sit dui Lesbians and Gays Support the Miners local eu Hanna Gaby Odiele est queer Misty Copeland She ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners local Equal ac et ut romance in Second wave sit friendship grl pwr castro.
+  3. Portability
 
-### Third Headline
+As such, there were some immediate decisions made before drawing anything in Fusion 360. First, no screws or glue would be used. Rather, snap-fit joints with tight tolerances would hold everything together, including the electronics. Second, these snap-fit joints could not come apart too easily. Lastly, the device had to stay relatively small, yet strong.
 
-Vel sem Sed Roxane Gay Caitlin Moran Ace id Amelia Earhart Gloria Steinem Samira Wiley sit Amelia Earhart Gloria Steinem eu In et ac in Alexandria Ocasio-Cortez Emmy Noether a Bi-visibility Dance Simone de Beauvoir eu sem.
+So, recalling some of my previous projects, I utilized <u>Adafruit's</u> snap-fit tutorial. After some CAD work, I printed an initial design. Immediately, the electronics were way too loose in their respective spots. Both the audio plug and jack had a lot of room to wobble around without much force applied. The snap fit joints were also loose, making the device feel as if it could easily fall apart.
 
-#### Fourth Headline
-
-Alexandria Ocasio-Cortez Emmy Noether a Bi-visibility dui et voices Stonewall Inn sem et Ac pride month lorem et eu dui sit eu ut Eu ut Et in lorem id sed Id Kate Bornstein smash the patriarchy et et eu motivational ut In Chimamanda Ngozi sed sit strength.
-
-![This is the alt tag.](../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg)
-
-Vel herstory Bossy sit ac xe she ut Tina Anselmi woman Marina Abramovich Spiritday all cultural Lili Elbe lorem in sexuality Transformation lgbt freedom et ac sem Sem we are everywhere Notion supporting androgyny dui ut dance Simone de Beauvoir eu sem sit Inge Schonöethal Feltrinelli female gaze ac Franca viola.
+Returning to Fusion, I worked on tightening the tolerances further, printing many more prototypes. After many revisions, and some slight increases in space for the resistors, a final version was printed and soldered together. The only piece with any wobble is the plug, but it only does so with a very intentional force. The case doesn’t come apart in normal use, but is easy to pull apart for repairs or changes, achieving my original design goals.

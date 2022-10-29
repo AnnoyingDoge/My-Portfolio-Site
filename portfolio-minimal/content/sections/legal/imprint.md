@@ -2,12 +2,7 @@
 sectionId: imprint
 ---
 
-#### Information pursuant to § 5 TMG
-
-YOURNAME<br />
-YOURSTREET<br />
-YOURCITY<br />
-YOURCOUNTRY
+#### Contact information
 
 E-Mail Address: <u>YOURMAIL@DOMAIN.COM</u>
 
@@ -15,7 +10,7 @@ E-Mail Address: <u>YOURMAIL@DOMAIN.COM</u>
 
 #### Liability for Contents
 
-As service providers, we are liable for own contents of these websites according to Sec. 7, paragraph 1 German Telemedia Act (TMG). However, according to Sec. 8 to 10 German Telemedia Act (TMG), service providers are not obligated to permanently monitor submitted or stored information or to search for evidences that indicate illegal activities.
+As service providers, we are liable for own contents of these websites. 
 
 Legal obligations to removing information or to blocking the use of information remain unchallenged. In this case, liability is only possible at the time of knowledge about a specific violation of law. Illegal contents will be removed immediately at the time we get knowledge of them.
 
