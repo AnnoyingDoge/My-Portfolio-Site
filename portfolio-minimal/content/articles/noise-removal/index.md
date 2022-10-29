@@ -1,7 +1,7 @@
 ---
 title: "3.5mm Jack Noise Remover"
-description: "This description will be used for the article listing and search results on Google."
-date: "2022-10-25"
+description: "A project log on ."
+date: "2022-03-01"
 banner:
   src: "../../custom-imgs/noise-removal/jack-2.jpg"
   alt: "PARC Prototype Robot (V0.5)"
