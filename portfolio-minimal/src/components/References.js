@@ -1,4 +1,5 @@
 import { HeroSection, Page, Section, Animation } from 'gatsby-theme-portfolio-minimal';
+import React from 'react';
 
 export default function IndexPage() {
     return (

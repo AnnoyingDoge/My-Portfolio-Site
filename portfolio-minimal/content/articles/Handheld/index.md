@@ -1,11 +1,11 @@
 ---
 title: "Custom Raspberry Pi Handheld"
 description: "This description will be used for the article listing and search results on Google."
-date: "2022-10-25"
+date: "2019-12-01"
 banner:
   src: "../../custom-imgs/handheld/handheld-front.jpg"
-  alt: "Forest village with well, background by Rachel Chen"
-  caption: 'Final version of the handheld'
+  alt: "A purple 3D printed gaming handheld, powered by a Raspberry Pi."
+  caption: 'Final version of the handheld.'
 categories:
   - "Electronics"
   - "Raspberry Pi"
@@ -16,178 +16,25 @@ keywords:
   - "3D Printing"
   - "PCBs"
 ---
-## Introduction
+## Introduction and CAD
 
-Lorem ipsum dolor sit amed Vel ut spiritday all cultural Lili Elbe lorem in sexuality Herstory sit lorem Ac Genderless homoflexible trans Carrie Fisher Transgender love family cross-dresser ac a ut Ac xe she ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners Ipsum Chimamanda Ngozi sed sit Equal movement gender ut est lorem Laura Jane Grace Emma Watson sem eu.
+![Case designed in Fusion 360, pictured without sides.](../../custom-imgs/handheld/Handheld-CAD.png "Case designed in Fusion 360, without sides.")
 
-## Unity Editor / Gameplay
+Type here
 
-Lorem ipsum dolor sit amed Vel ut spiritday all cultural Lili Elbe lorem in sexuality Herstory sit lorem Ac Genderless homoflexible trans Carrie Fisher Transgender love family cross-dresser ac a ut Ac xe she ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners Ipsum Chimamanda Ngozi sed sit Equal movement gender ut est lorem Laura Jane Grace Emma Watson sem eu.
+## Electronics
 
-## Code
+![Handheld internals, wires, screens, and PCBs pictured.](../../custom-imgs/handheld/handheld-internals-crop.jpg "The internals of the handheld.")
 
-```Csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+Some highlights of the internals include:
+1. Raspberry Pi 3B
+2. Custom Button PCBs
+3. Pimoroni HyperPixel Display
+4. Adafruit speaker and amp
+5. An Arduino Pro-Micro for input handling
 
-public class newMove : MonoBehaviour
-{
-    //Just the pieces of the dash from the movement script.
+The electronics of this handheld were the most rewarding part of the design process. Originally, my plan was to use a low-resolution TFT display as well as hard plastic buttons. However, I decided that I wanted to build a device that I would actually want to use. So, I picked a LCD screen, which used up just about all of the GPIO pins, as well as silicone buttons. Due to the few GPIO pins available, wiring buttons to them would not work. So, after researching online, I decided arduino might be the way to go. The arduino pro-micro has great support for using it as an HID device, so I picked this, as well as choosing to make some button PCBs to make the internal structure simpler. However, I had limited experience with both Arduino and PCB design, so I spent hours online watching researching software, watching tutorials, and making mistakes. In any case, I learned a lot through the process and by seeing the errors that I now know to avoid.
 
-    #region dashing
-    private void startDash()
-    {
-        if (canDash && (!dashing || canCancelDash)) //&& (Mathf.Abs(x) > 0 || Mathf.Abs(y) > 0))
-        {
-            if (dashing)
-            {
-                canCancelDash = false;
-                StopCoroutine(dashRoutine);
-                StopCoroutine(dashParticleRoutine);
-                StopCoroutine(dashAfterImageRoutine);
-            }
+![4-Button PCB Schematics pictured.](../../custom-imgs/handheld/PCB-black.png "Custom designed (in EAGLE) button PCBs.")
 
-            Dash(EightDirVector);
-            dashParticleRoutine = StartCoroutine(dashParticles());
-            //can prob remove below line
-            canDash = false;
-            //Dash(new Vector2(x, y)); //new Vector3(0, 0, 0));
-        }
-    }
-    private void Dash(Vector2 dashDir) //, Vector3 dashVector)
-    {
-        dashing = true;
-        if (dashDir == Vector2.zero)
-        {
-            if(animScript.facingRight)
-            {
-                dashDir = Vector2.right;
-            }
-            else
-            {
-                dashDir = Vector2.left;
-            }
-        }
-        bJump.enabled = false;
-        PlayerRB2D.velocity = (Vector2.zero);
-        PlayerRB2D.velocity += (dashDir.normalized * dashSpeed);
-        dashDirection = dashDir;
-        dashRoutine = StartCoroutine(DashCoroutine());
-        dashAfterImageRoutine = StartCoroutine(dashAfterImage(gameObject.GetComponent<SpriteRenderer>()));
-    }
-
-    
-    //EndDash is referenced by other classes, hence it being public.
-    public void EndDash(bool doSlowDown)
-    {
-        if (dashing)
-        {
-            //canDash = false;
-            //PlayerRB2D.velocity = (Vector2.zero);
-
-            //maybe uncomment below line
-            //PlayerRB2D.velocity = new Vector2(x * speed, 0);
-            if(doSlowDown)
-            {
-                //PlayerRB2D.velocity = new Vector2(x * speed, 0);
-                //PlayerRB2D.velocity = new Vector2(0, 0);
-            }
-            PlayerRB2D.velocity = new Vector2(PlayerRB2D.velocity.x, 0);
-
-            //PlayerRB2D.velocity = new Vector2(x * speed, y * speed);
-            PlayerRB2D.gravityScale = gravScale;
-            dashing = false;
-            bJump.enabled = true;
-
-            StopCoroutine(dashParticleRoutine);
-            StopCoroutine(dashRoutine);
-            StopCoroutine(dashAfterImageRoutine);
-        }
-    }
-    private void CancelDash()
-    {
-        PlayerRB2D.gravityScale = gravScale;
-        dashing = false;
-        bJump.enabled = true;
-
-        StopCoroutine(dashParticleRoutine);
-        StopCoroutine(dashRoutine);
-        StopCoroutine(dashAfterImageRoutine);
-    }
-
-    private IEnumerator DashCoroutine() //, Vector3 dashVector)
-    {
-
-        PlayerRB2D.gravityScale = 0;
-        canCancelDash = false;
-
-        yield return new WaitForSeconds(dashTime / 2);
-
-        canCancelDash = true;
-
-        yield return new WaitForSeconds(dashTime / 2);
-        canCancelDash = false;
-
-        EndDash(true);
-    }
-    private IEnumerator dashParticles()
-    {
-        float particleTime = 0.05f * Random.Range(1.0f, 2.0f);
-
-        for (int i = 0; i < (dashTime / particleTime); i++)
-        {
-            Instantiate(dashParticleObject, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(particleTime);
-        }
-    }
-    private IEnumerator dashAfterImage(SpriteRenderer currentSprite)
-    {
-        //shader that we'll use to make our afterimage look different
-        Shader GUIShader;
-        //the GUI text shader allows us to just set the sprite as one color
-        GUIShader = Shader.Find("GUI/Text Shader");
-        for (float i = 0; i < dashTime; i += dashTime/3)
-        {
-            GameObject obj;
-            SpriteRenderer sr;
-
-            //create our afterimage object
-            obj = Instantiate(dashAfterImageObject, new Vector3(transform.position.x, transform.position.y, transform.position.z + 1), Quaternion.identity);
-
-            //Scale and sprite set
-            obj.transform.localScale = gameObject.transform.localScale;
-            sr = obj.AddComponent<SpriteRenderer>();
-            sr.sprite = currentSprite.sprite;
-
-            //some hacky renderer stuff to make the sprite single color
-            sr.material.shader = GUIShader;
-            
-            //white with 50% opacity
-            sr.color = new Color (1, 1, 1, 0.5f);
-
-            
-            sr.flipY = (Mathf.Sign(gravScale) == -1);
-
-            //Wait to loop again
-            yield return new WaitForSeconds(dashTime / 3);
-        }
-        yield return null;
-    }
-    #endregion
-}
-```
-
-Inline code: `print()`
-
-Lorem ipsum dolor sit amed Vel ut spiritday all cultural Lili Elbe lorem in sexuality Herstory sit lorem Ac Genderless homoflexible trans Carrie Fisher Transgender love family cross-dresser ac a ut Ac xe she ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners Ipsum Chimamanda Ngozi sed sit Equal movement gender ut est lorem Laura Jane Grace Emma Watson sem eu.
-
-**Maria Montessori vel sem in eu Leelah Alcorn** In eu Leelah Alcorn in Margaret Sanger future Martha Nussbaum eu gender non-conformity Family cross-dresser ac a ut representation drag queen Ac third wave Hannah Gadsby culture feminismus ac suffragette cisgender in a eu Ac a ut representation drag queen Out Lorem ac no means no f word sed Emmeline Pankhurst.
-
-## Animation
-
-Est vel est appreciation Nadia Murad Basee Taha cross-dressing vel Ut mi sit ut eu id Samira Wiley sit vel sem Ut romance in gender studies ballroom Sit lorem ac no means no f word sed Emmeline Pankhurst Ac sorellanza In Lea Delaria in grrlpwr pansexual intersectional yas queen diritti id mi Sem Audre Lorde Sappho in sed et empowerment genderqueer intersex.
-
-![This is the alt tag.](../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg "This is a markdown [caption](https://konstantin.digital).")
-
-Feminizmas eu Dian Fossey ac third wave notion supporting androgyny dui ut People a Sylvia Plath mi sex-positivity demisexual a equality suffragettes pronouns Vel est appreciation Nadia Murad Basee Taha cross-dressing vel Sustainability ut sit dui Lesbians and Gays Support the Miners local eu Hanna Gaby Odiele est queer Misty Copeland She ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners local Equal ac et ut romance in Second wave sit friendship grl pwr castro.
+This is a PCB designed in EAGLE for use in the Raspberry Pi handheld project. The PCB is fairly simple, mostly serving as a convenient way to mount the buttons and keep wiring clean. Each switch is connected to a corresponding signal pin, as well as a common ground, the “GI” pin. Extra ground pins were added so that multiple PCBs could share ground, if desired. At the point in the project where I had decided to use a PCB, I had no knowledge of PCB design, and took the opportunity to learn. I watched EAGLE tutorials, read up on how to import libraries (used for the Adafruit buttons), researched PCB manufacturers, and looked at basic circuit design. The final product worked well for its use case, though I believe the overall footprint of the PCB could be reduced by changing the mounting holes and I/O pins.

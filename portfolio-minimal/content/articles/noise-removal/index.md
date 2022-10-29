@@ -4,8 +4,8 @@ description: "A project log on ."
 date: "2022-03-01"
 banner:
   src: "../../custom-imgs/noise-removal/jack-2.jpg"
-  alt: "PARC Prototype Robot (V0.5)"
-  caption: 'PARC''s Prototype Robot (V0.5)'
+  alt: "A device with an audio plug, three 100 ohm resistors, wires, and an audio jack."
+  caption: 'The final product, laying open.'
 categories:
   - "Electronics"
   - "Computer Hardware"
@@ -32,7 +32,7 @@ In the final product, there are three 100 ohm resistors, one for each pin. The 3
 ## Design and Printing
 
 
-![This is the alt tag.](../../custom-imgs/noise-removal/Case-CAD.png "The 3D printed snap fit case requires no mounting hardware!")
+![CAD design of the snap-fit case, pictured in Fusion 360.](../../custom-imgs/noise-removal/Case-CAD.png "The 3D printed snap fit case requires no mounting hardware!")
 
 When designing this device, there were a few general goals:
 

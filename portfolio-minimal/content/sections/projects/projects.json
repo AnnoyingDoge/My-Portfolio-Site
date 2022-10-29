@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "visible": false,
+      "category": "About",
+      "title": "General Project Information",
+      "description": "All articles, up to those dated as October 2022, were written in October 2022. You might notice that some are dated earlier than this. For organizational reasons, I have decided to date each project with its completion date. In the case of ongoing projects, the are simply dated with the date of most recent edits. This keeps everything in order, with proper context of which projects came first, with the trade off of adding some confusion to their dating.",
+      "tags": ["About"],
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "/about-article"
+        }
+      ]
+    },
+    {
       "visible": true,
       "category": "Game Development",
       "title": "Project Fetch",
@@ -84,7 +101,7 @@
       "visible": true,
       "category": "Other",
       "title": "...and more!",
-      "description": "Check out all my other projects at the link below!",
+      "description": "Check out all my other projects at the link below! The articles are dated with the completion date of the project, but have been written recently.",
       "tags": ["Lots of other stuff!"],
       "image": {
         "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
