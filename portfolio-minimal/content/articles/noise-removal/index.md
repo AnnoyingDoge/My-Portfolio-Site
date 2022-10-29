@@ -8,7 +8,7 @@ banner:
   caption: 'The final product, laying open.'
 categories:
   - "Electronics"
-  - "Computer Hardware"
+  - "Audio"
 keywords:
   - "CAD"
   - "Fusion 360"
