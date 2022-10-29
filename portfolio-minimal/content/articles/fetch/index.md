@@ -34,8 +34,6 @@ using UnityEngine;
 public class newMove : MonoBehaviour
 {
     //Just the pieces of the dash from the movement script.
-
-    #region dashing
     private void startDash()
     {
         if (canDash && (!dashing || canCancelDash)) //&& (Mathf.Abs(x) > 0 || Mathf.Abs(y) > 0))
@@ -83,11 +81,6 @@ public class newMove : MonoBehaviour
     {
         if (dashing)
         {
-            //canDash = false;
-            //PlayerRB2D.velocity = (Vector2.zero);
-
-            //maybe uncomment below line
-            //PlayerRB2D.velocity = new Vector2(x * speed, 0);
             if(doSlowDown)
             {
                 //PlayerRB2D.velocity = new Vector2(x * speed, 0);
@@ -131,7 +124,23 @@ public class newMove : MonoBehaviour
 
         EndDash(true);
     }
-    private IEnumerator dashParticles()
+    //See animation section for dash effect methods!
+}
+```
+
+Inline code: `print()`
+
+Lorem ipsum dolor sit amed Vel ut spiritday all cultural Lili Elbe lorem in sexuality Herstory sit lorem Ac Genderless homoflexible trans Carrie Fisher Transgender love family cross-dresser ac a ut Ac xe she ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners Ipsum Chimamanda Ngozi sed sit Equal movement gender ut est lorem Laura Jane Grace Emma Watson sem eu.
+
+**Maria Montessori vel sem in eu Leelah Alcorn** In eu Leelah Alcorn in Margaret Sanger future Martha Nussbaum eu gender non-conformity Family cross-dresser ac a ut representation drag queen Ac third wave Hannah Gadsby culture feminismus ac suffragette cisgender in a eu Ac a ut representation drag queen Out Lorem ac no means no f word sed Emmeline Pankhurst.
+
+## Animation
+
+![An image of the player animation tree.](../../custom-imgs/fetch/animation-tree.png "The animation tree I made to control sprites by Rachel Chen.")
+
+Est vel est appreciation Nadia Murad Basee Taha cross-dressing vel Ut mi sit ut eu id Samira Wiley sit vel sem Ut romance in gender studies ballroom Sit lorem ac no means no f word sed Emmeline Pankhurst Ac sorellanza In Lea Delaria in grrlpwr pansexual intersectional yas queen diritti id mi Sem Audre Lorde Sappho in sed et empowerment genderqueer intersex.
+```Csharp
+private IEnumerator dashParticles()
     {
         float particleTime = 0.05f * Random.Range(1.0f, 2.0f);
 
@@ -141,7 +150,7 @@ public class newMove : MonoBehaviour
             yield return new WaitForSeconds(particleTime);
         }
     }
-    private IEnumerator dashAfterImage(SpriteRenderer currentSprite)
+private IEnumerator dashAfterImage(SpriteRenderer currentSprite)
     {
         //shader that we'll use to make our afterimage look different
         Shader GUIShader;
@@ -174,20 +183,6 @@ public class newMove : MonoBehaviour
         }
         yield return null;
     }
-    #endregion
-}
 ```
-
-Inline code: `print()`
-
-Lorem ipsum dolor sit amed Vel ut spiritday all cultural Lili Elbe lorem in sexuality Herstory sit lorem Ac Genderless homoflexible trans Carrie Fisher Transgender love family cross-dresser ac a ut Ac xe she ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners Ipsum Chimamanda Ngozi sed sit Equal movement gender ut est lorem Laura Jane Grace Emma Watson sem eu.
-
-**Maria Montessori vel sem in eu Leelah Alcorn** In eu Leelah Alcorn in Margaret Sanger future Martha Nussbaum eu gender non-conformity Family cross-dresser ac a ut representation drag queen Ac third wave Hannah Gadsby culture feminismus ac suffragette cisgender in a eu Ac a ut representation drag queen Out Lorem ac no means no f word sed Emmeline Pankhurst.
-
-## Animation
-
-Est vel est appreciation Nadia Murad Basee Taha cross-dressing vel Ut mi sit ut eu id Samira Wiley sit vel sem Ut romance in gender studies ballroom Sit lorem ac no means no f word sed Emmeline Pankhurst Ac sorellanza In Lea Delaria in grrlpwr pansexual intersectional yas queen diritti id mi Sem Audre Lorde Sappho in sed et empowerment genderqueer intersex.
-
-![This is the alt tag.](../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg "This is a markdown [caption](https://konstantin.digital).")
 
 Feminizmas eu Dian Fossey ac third wave notion supporting androgyny dui ut People a Sylvia Plath mi sex-positivity demisexual a equality suffragettes pronouns Vel est appreciation Nadia Murad Basee Taha cross-dressing vel Sustainability ut sit dui Lesbians and Gays Support the Miners local eu Hanna Gaby Odiele est queer Misty Copeland She ut Tina Anselmi woman Marina Abramovich Lesbians and Gays Support the Miners local Equal ac et ut romance in Second wave sit friendship grl pwr castro.

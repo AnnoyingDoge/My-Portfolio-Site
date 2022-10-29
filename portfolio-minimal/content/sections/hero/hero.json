@@ -1,8 +1,8 @@
 {
   "intro": "Hi!",
   "heroPhoto": {
-    "src": "../../images/joystick.png",
-    "alt": "My Photo"
+    "src": "../../custom-imgs/photos/me-alt.jpg",
+    "alt": "A photo of me!"
   },
   "image": {
     "src": "",
