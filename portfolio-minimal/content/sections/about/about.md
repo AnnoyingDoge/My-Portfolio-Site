@@ -1,6 +1,6 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageSrc: "../../custom-imgs/collage.png"
+imageAlt: "Various projects"
 ---
 
 I'm Sam, a high school senior who loves robotics, game development, CAD, and 3D printing. Check out my projects below!
@@ -10,4 +10,4 @@ I love teaching myself new tools and methods of making, whether it be a new prog
 
 Right now, I'm focused on my school's <u>FTC Team</u> and a game development project titled <u>Fetch</u>.
 
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+
