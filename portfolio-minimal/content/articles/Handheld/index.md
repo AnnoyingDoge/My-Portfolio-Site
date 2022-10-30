@@ -1,6 +1,6 @@
 ---
 title: "Custom Raspberry Pi Handheld"
-description: "This description will be used for the article listing and search results on Google."
+description: "Read about a custom Raspberry Pi handheld I built!"
 date: "2019-12-01"
 banner:
   src: "../../custom-imgs/handheld/handheld-front.jpg"

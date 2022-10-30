@@ -82,23 +82,6 @@
     },
     {
       "visible": true,
-      "category": "ROBOTICS",
-      "title": "VEX Robotics",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
-      "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
-      },
-      "links": [
-        {
-          "type": "external",
-          "url": "/vex"
-        }
-      ]
-    },
-    {
-      "visible": true,
       "category": "Other",
       "title": "...and more!",
       "description": "Check out all my other projects at the link below! The articles are dated with the completion date of the project, but have been written recently.",

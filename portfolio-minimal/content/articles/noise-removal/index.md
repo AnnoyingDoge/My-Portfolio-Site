@@ -1,6 +1,6 @@
 ---
 title: "3.5mm Jack Noise Remover"
-description: "A project log on ."
+description: "A project log on a 3.5mm Jack Noise Remover."
 date: "2022-03-01"
 banner:
   src: "../../custom-imgs/noise-removal/jack-2.jpg"

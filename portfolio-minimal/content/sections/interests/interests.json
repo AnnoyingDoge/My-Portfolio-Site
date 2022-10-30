@@ -15,13 +15,6 @@
       }
     },
     {
-      "label": "3D Printing",
-      "image": {
-        "src": "../../images/mobile-phone.png",
-        "alt": ""
-      }
-    },
-    {
       "label": "Java",
       "image": {
         "src": "../../custom-imgs/icons/java.png",
@@ -36,9 +29,16 @@
       }
     },
     {
+      "label": "3D Printing",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
       "label": "Soldering",
       "image": {
-        "src": "../../images/gem-stone.png",
+        "src": "",
         "alt": ""
       }
     }

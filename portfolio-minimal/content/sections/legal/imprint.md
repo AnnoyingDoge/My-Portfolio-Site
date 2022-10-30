@@ -2,12 +2,6 @@
 sectionId: imprint
 ---
 
-#### Contact information
-
-E-Mail Address: <u>YOURMAIL@DOMAIN.COM</u>
-
----
-
 #### Liability for Contents
 
 As service providers, we are liable for own contents of these websites. 

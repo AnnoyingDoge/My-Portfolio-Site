@@ -1,6 +1,6 @@
 ---
 title: "Fetch: A 2D Platformer"
-description: "This description will be used for the article listing and search results on Google."
+description: "Read about Fetch, an indie 2D platformer!"
 date: "2022-10-29"
 banner:
   src: "../../custom-imgs/fetch/fetch-background-cropped.png"
@@ -16,17 +16,35 @@ keywords:
   - "C#"
   - "Csharp"
 ---
+
+View the code on <u><a>[Github](https://github.com/AnnoyingDoge/DogGameCode)</a></u>!
+
+Visit our <u><a>[Website](http://playfetch.net)</a></u>!
+
 ## Introduction
 
-Type here
+Fetch is an indie 2D platformer which I’m currently developing alongside artist and lead writer <u><a>Rachel Chen</a></u> and composer <u><a>Declan Scully</a></u>. The final game will have five chapters, featuring unique areas, each with their own aesthetic, music, and gameplay elements.
+
+The game is made in Unity, with all code written in C#. Most of this code can be found in the Github repository above. Rather than using Github for the entire project, I’m using Plastic SCM, as it better integrates with larger, Unity-specific assets.
+
+As a team of new developers, it's been a challenging process. In June, Rachel was new to animation, Declan hadn’t made a soundtrack before, and I was a Unity novice. At every turn, we're facing new problems. For my part I've worked through each problem by trying to code a solution, then troubleshooting by reading documentation, forums, or rewriting my code entirely. We've been staying organized through ClickUp. Coordinating our work on the project has been difficult, but we plan to deliver the first ‘chapter’ by June.
+
+Lastly, I want to make clear what resources that I used, beyond those which might be considered common knowledge. The script which handles jumping (betterJump.cs) is based on a <u><a>[tutorial by Board To Bits Games](https://www.youtube.com/watch?v=7KiK0Aqtmzc)</a></u>. My collision script takes inspiration from a <u><a>[repository by Mix and Jam](https://github.com/mixandjam/Celeste-Movement)</a></u>. 
+
 
 ## Unity Editor / Gameplay
 
-Type here
+![An image of the player animation tree.](../../custom-imgs/fetch/unityeditortestlevel.png "A concept room design, with art by Rachel Chen.")
 
-## Code
+As the programmer and game designer, I have been working on implementing efficient levels with unique design and style. The main concern has been the trade-off between the time to create many assets and quality. To maintain quality and reduce time, the plan is to layer backgrounds, tiles, prefab objects, and lighting, each with different depths and effects. Shown in this image is a concept, which uses a tree in the foreground, a separate background, and lighting to give the impression of space in a 2D level. Plans for the future include creating robust tiles and adding specific depth effects for each layer, such as parallax and blurring. Furthermore, I spent many hours on camera and level systems that are efficient and reusable.
 
-Type here
+The camera system and level load system were particularly challenging. The camera system is fairly simple. It checks which borders the camera is in contact with, and sets its desired position accordingly. Getting to this point was difficult, as I spent a long time figuring out how to access and parse the collider information. I had originally intended to use linear interpolation to have the camera follow slightly behind the player, but this causes issues. Fortunately, Unity has a solution. SmoothDamp, when called in a LateUpdate (called every frame after FixedUpdate and Update) accomplishes what I had desired from linear interpolation. The level load system was not as bad, as it allowed me to set which level to load and where the transition point is. The code for the camera and level loading systems can be found on the Github repository.
+
+The general movement and gameplay systems can be seen on our website. As a quick summary, the dog is able to jump, run, wall jump, and dash. So, the game will focus on fast-paced, tight controlling platforming sections. More will be added to this section as gameplay is finalized!
+
+## Sample Code
+
+Here's a sample of some of the dash code! This is all contained within the movement script and handles dashing and calling any visual effect methods.
 
 ```Csharp
 //Just the pieces of the dash from the movement script.
@@ -123,15 +141,13 @@ private IEnumerator DashCoroutine() //, Vector3 dashVector)
 //See animation section for dash effect methods!
 ```
 
-Inline code: `print()`
-
-Type here
-
 ## Animation
 
 ![An image of the player animation tree.](../../custom-imgs/fetch/animation-tree.png "The animation tree I made to control sprites by Rachel Chen.")
 
-Type here
+The animation tree, pictured above, is a result of the collaboration process for this game. As Rachel and I were new to this process, we had many discussions on how we might implement dynamic animations. This animation tree is the result of these discussions and our individual work. The main concern we shared was maintaining Rachel’s style while implementing responsive animations. For example, the jump can end early, as the player may jump low or land on a higher platform. Thus, Rachel and I discussed how she might design a landing frame to ensure this wasn’t too jarring. Both of us researched other platformers, analyzing how other artists and developers handled the same issue. In the end, we landed on the system shown in the left side of the chart, with stages of jumping, falling, and a second falling stage, which could each be canceled by the landing animation. So, she created sprite sheets to fit this system, while I implemented the sprites into the game, following our plan.
+
+In general, we're supplementing animation with effects generated within C# and the Unity Editor to achieve both visual stylization and incredibly dynamic effects. Below, there is some code which does this for the dash system. This generates particles for the dash, as well as an afterimage based on the players current sprite.
 
 ```Csharp
 private IEnumerator dashParticles()
@@ -179,4 +195,6 @@ private IEnumerator dashAfterImage(SpriteRenderer currentSprite)
     }
 ```
 
-Type here
+## Conclusion
+
+We can't wait to release this game, so please stay tuned!
