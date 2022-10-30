@@ -16,6 +16,8 @@ keywords:
   - "3D Printing"
 ---
 
+CAD Files on <u><a>[Github](https://github.com/AnnoyingDoge/CAD-Projects/tree/main/Impedence-Resistence%203.5mm%20Jack)</a></u>!
+
 ## Introduction
 
 This project started after a conversation I had with my friend Trevor in the spring of 11th grade. We both had been experiencing some static/noise on our low impedance IEMs, so I threw together a breadboard circuit and tried artificially increasing impedance using 22 ohm resistors. After hearing the static disappear, I decided to make a cheap, portable version of this device for him and I.

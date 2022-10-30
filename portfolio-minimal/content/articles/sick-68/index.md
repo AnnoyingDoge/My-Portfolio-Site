@@ -21,7 +21,7 @@ This is the side view of a keyboard I 3D printed and hand-wired using Cherry swi
 
 ![The side view of the keyboard.](../../custom-imgs/sick-68/side.jpg "Side view of the keyboard.")
 
-The files can be found on my Github or at this link on <u><a>[Thingiverse.](https://www.thingiverse.com/thing:4936789)</a></u> My hope, in uploading them, is that users with the same issue could have a quick and easy solution.
+The files can be found on <u><a>[Thingiverse.](https://www.thingiverse.com/thing:4936789)</a></u> My hope, in uploading them, is that users with the same issue could have a quick and easy solution.
 
 ## Wiring
 

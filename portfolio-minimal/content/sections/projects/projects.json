@@ -46,7 +46,7 @@
       "visible": true,
       "category": "ROBOTICS",
       "title": "FIRST Robotics",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
+      "description": "It's our rookie year in FTC! Read about PARC Acadia #22070 and my role below.",
       "tags": ["Custom Sections", "Easy-2-Use"],
       "image": {
         "src": "../../custom-imgs/robotics/robot-top.jpg",
@@ -55,7 +55,7 @@
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/FTC-PARC-Acadia/Power-Play"
+          "url": "https://github.com/FTC-PARC-Acadia/"
         },
         {
           "type": "external",
@@ -67,13 +67,17 @@
       "visible": true,
       "category": "Electronics",
       "title": "3.5mm Jack Noise Remover",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
+      "description": "My friend Trevor and I had noticed some static sounds in our IEMs, so I decided to build a solution! Click the link below to read more!",
       "tags": ["CAD", "Fusion 360", "3D Printing"],
       "image": {
         "src": "../../custom-imgs/noise-removal/jack-1.jpg",
         "alt": "Earbuds, audio jack with noise removal device"
       },
       "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/AnnoyingDoge/CAD-Projects/tree/main/Impedence-Resistence%203.5mm%20Jack"
+        },
         {
           "type": "external",
           "url": "/noise-removal"
@@ -87,7 +91,7 @@
       "description": "Check out all my other projects at the link below! The articles are dated with the completion date of the project, but have been written recently.",
       "tags": ["Lots of other stuff!"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "src": "../../custom-imgs/handheld/PCB-black.png",
         "alt": "Extendable Layout"
       },
       "links": [

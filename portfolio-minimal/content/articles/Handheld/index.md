@@ -16,6 +16,9 @@ keywords:
   - "3D Printing"
   - "PCBs"
 ---
+
+CAD Files on <u><a>[Github](https://github.com/AnnoyingDoge/CAD-Projects/tree/main/Pi%20Handheld)</a></u>!
+
 ## Introduction and CAD
 
 ![Case designed in Fusion 360, pictured without sides.](../../custom-imgs/handheld/Handheld-CAD.png "Case designed in Fusion 360, without sides.")
