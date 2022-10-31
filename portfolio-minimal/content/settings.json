@@ -1,7 +1,7 @@
 {
   "siteMetadata": {
     "language": "en",
-    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
+    "siteUrl": "https://sam-keamy-portfolio.vercel.app/",
     "title": "Sam Keamy's Portfolio",
     "titleTemplate": "%s · Sam Keamy",
     "description": "A simple portfolio by Sam Keamy.",
