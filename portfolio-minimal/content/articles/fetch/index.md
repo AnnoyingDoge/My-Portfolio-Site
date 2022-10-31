@@ -21,6 +21,8 @@ View the code on <u><a>[Github](https://github.com/AnnoyingDoge/DogGameCode)</a>
 
 Visit our <u><a>[Website](http://playfetch.net)</a></u>!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oBMOtgGY95Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 Fetch is an indie 2D platformer which I’m currently developing alongside artist and lead writer <u><a>Rachel Chen</a></u> and composer <u><a>Declan Scully</a></u>. The final game will have five chapters, featuring unique areas, each with their own aesthetic, music, and gameplay elements.
