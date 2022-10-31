@@ -33,7 +33,6 @@ In the final product, there are three 100 ohm resistors, one for each pin. The 3
 
 ## Design and Printing
 
-
 ![CAD design of the snap-fit case, pictured in Fusion 360.](../../custom-imgs/noise-removal/Case-CAD.png "The 3D printed snap fit case requires no mounting hardware!")
 
 When designing this device, there were a few general goals:
@@ -49,3 +48,5 @@ As such, there were some immediate decisions made before drawing anything in Fus
 So, recalling some of my previous projects, I utilized <u>Adafruit's</u> snap-fit tutorial. After some CAD work, I printed an initial design. Immediately, the electronics were way too loose in their respective spots. Both the audio plug and jack had a lot of room to wobble around without much force applied. The snap fit joints were also loose, making the device feel as if it could easily fall apart.
 
 Returning to Fusion, I worked on tightening the tolerances further, printing many more prototypes. After many revisions, and some slight increases in space for the resistors, a final version was printed and soldered together. The only piece with any wobble is the plug, but it only does so with a very intentional force. The case doesn’t come apart in normal use, but is easy to pull apart for repairs or changes, achieving my original design goals.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KdaWFT4h7go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
