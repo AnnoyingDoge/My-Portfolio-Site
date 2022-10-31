@@ -21,7 +21,7 @@
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
-        { "label": "Projects", "url": "/#projects" },
+        { "label": "Projects", "url": "/blog" },
         { "label": "Github", "url": "https://github.com/AnnoyingDoge" },
         { "label": "Thingiverse", "url": "https://www.thingiverse.com/ferb601/designs" }
       ],
