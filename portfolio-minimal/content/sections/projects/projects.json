@@ -47,7 +47,7 @@
       "category": "ROBOTICS",
       "title": "FIRST Robotics",
       "description": "It's our rookie year in FTC! Read about PARC Acadia #22070 and my role below.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "tags": ["Robotics", "FIRST", "Java"],
       "image": {
         "src": "../../custom-imgs/robotics/robot-top.jpg",
         "alt": "Prototype FTC Robot"
