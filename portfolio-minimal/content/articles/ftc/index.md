@@ -22,7 +22,7 @@ This year, we have established a rookie FTC team, PARC Acadia #22070. Much of th
 
 The first full iteration of our robot competed at a scrimmage in early December at Andover High School, achieving multiple wins, a success for our rookie team.  
 
-![Our robot on the FTC Powerplay field at our scrimmage.](../../custom-imgs/robotics/v1onfield.png "Robot V1.0 at our first scrimmage.")
+![Our robot on the FTC Powerplay field at our scrimmage.](../../custom-imgs/robotics/v1onfield.png "Robot V1.0 competing at our first scrimmage.")
 
 While the hardware team is building out new features (including deadwheel odometry for use by the Roadrunner library), we are beginning work on a website built in Gatsby, as well as training image recognition with TensorFlow for robot V2.0. 
 
