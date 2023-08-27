@@ -24,8 +24,13 @@ Visit our <u><a>[Website](http://playfetch.net)</a></u>!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oBMOtgGY95Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction
+(Update: Fall 2023)
 
-Fetch is an indie 2D platformer which I’m currently developing alongside artist and lead writer <u><a>Rachel Chen</a></u> and composer <u><a>Declan Scully</a></u>. The final game will have five chapters, featuring unique areas, each with their own aesthetic, music, and gameplay elements.
+Sadly, development has been put on hold since spring of 2023. We had varying commitments leading up to fall 2023, and then started our first year of college at various institutions. Hopefully, we can continue work on the project, but either way, we enjoyed it. I built out most of the features for the first chapter, so we may return to at least finish that.
+
+(Original Article: October 29, 2022)
+
+Fetch is an indie 2D platformer which I was developing alongside artist and lead writer <u><a>Rachel Chen</a></u> and composer <u><a>Declan Scully</a></u>. The final game will have five chapters, featuring unique areas, each with their own aesthetic, music, and gameplay elements.
 
 The game is made in Unity, with all code written in C#. Most of this code can be found in the Github repository above. Rather than using Github for the entire project, I’m using Plastic SCM, as it better integrates with larger, Unity-specific assets.
 

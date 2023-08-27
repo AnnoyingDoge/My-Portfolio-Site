@@ -8,13 +8,13 @@
     "src": "",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm Sam",
+  "title": "I'm Sam,",
   "subtitle": {
-    "prefix": "A high school student who loves ",
+    "prefix": "a student who loves ",
     "highlight": "making",
     "suffix": "."
   },
-  "description": "Read onwards to see what I've been working on!",
+  "description": "Studying engineering at BU, see some of my projects below!",
   "socialProfiles": {
     "from": ["Github", "Mail"],
     "showIcons": true
