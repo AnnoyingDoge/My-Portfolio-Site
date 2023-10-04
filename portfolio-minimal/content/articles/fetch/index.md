@@ -7,8 +7,8 @@ banner:
   alt: "Forest village with well, background by Rachel Chen"
   caption: 'Art by <u><a>Rachel Chen</a></u>'
 categories:
-  - "Game Development"
-  - "Fetch"
+  - "Software Development"
+  - "Games"
 keywords:
   - "Fetch"
   - "Game"
